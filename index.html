@@ -10,19 +10,25 @@
 	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
 	<meta name="author" content="freehtml5.co" />
 
-	<!-- 
-	//////////////////////////////////////////////////////
+<!--		&lt;!&ndash; Animation &ndash;&gt;-->
+<!--		<link href="dist/stylesheets/animate.css" rel="stylesheet">-->
+<!--		&lt;!&ndash; Animation On Scroll &ndash;&gt;-->
+<!--		<link href="dist/stylesheets/aos.min.css" rel="stylesheet">-->
 
-	FREE HTML5 TEMPLATE 
-	DESIGNED & DEVELOPED by FreeHTML5.co
-		
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
 
-	//////////////////////////////////////////////////////
-	 -->
+		<!--
+        //////////////////////////////////////////////////////
+
+        FREE HTML5 TEMPLATE
+        DESIGNED & DEVELOPED by FreeHTML5.co
+
+        Website: 		http://freehtml5.co/
+        Email: 			info@freehtml5.co
+        Twitter: 		http://twitter.com/fh5co
+        Facebook: 		https://www.facebook.com/fh5co
+
+        //////////////////////////////////////////////////////
+         -->
 
   	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
@@ -37,7 +43,8 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-	
+	<link rel="stylesheet" href="css/style-grey.css">
+	<link rel="stylesheet" href="css/preload.css">
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -53,11 +60,39 @@
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
+
 	<![endif]-->
 
 	</head>
-	<body>
-		
+	<body onload="myFunction()">
+	<!--==========================================
+                 PAGE LOADER
+===========================================-->
+	<div id="page-loader">
+		<div class="animated bounceInDown">
+			<div class="spinner"></div>
+<!--			<div id="loading">-->
+<!--				<div id="loading-center">-->
+<!--					<div id="loading-center-absolute">-->
+<!--						<div class="object" id="object_one"></div>-->
+<!--						<div class="object" id="object_two"></div>-->
+<!--						<div class="object" id="object_three"></div>-->
+<!--						<div class="object" id="object_four"></div>-->
+
+<!--					</div>-->
+<!--				</div>-->
+
+<!--			</div>-->
+		</div>
+		<div class="text-div text-center animated zoomIn">
+			<p class="text-uppercase">INTRODUCING</p>
+			<!-- Name Only -->
+			<h6 class="text-uppercase">Ashan Kaushalya</h6>
+		</div>
+	</div>
+
+
+
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">	
@@ -625,9 +660,7 @@
 	<div id="fh5co-footer">
 		<div class="container">
 			<div class="row">
-				<!-- <div class="col-md-12">
-					<!-- <p>&copy; 2017 Free HTML5 Template. All Rights Reserved. <br>Designed by <a href="http://freehtml5.co" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.com" target="_blank">Unsplash</a></p> -->
-				</div> -->
+
 			</div>
 		</div>
 	</div>
@@ -635,7 +668,6 @@
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
 	</div>
-	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -651,10 +683,18 @@
 	<!-- Google Map -->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
 	<script src="js/google_map.js"></script>
-	
+
 	<!-- Main -->
 	<script src="js/main.js"></script>
 
+<!--	<script src="js/custom-script.js" ></script>-->
+	<script>
+		function myFunction() {
+			setTimeout(function () {
+				$("#page-loader").fadeOut(500);
+			},1300);
+		}
+	</script>
 	</body>
 </html>
 
