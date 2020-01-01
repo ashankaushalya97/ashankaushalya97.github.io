@@ -2,7 +2,7 @@
 #page-loader .text-div{width:100%;position:absolute;top:270px;color:#ffffff;}
 #page-loader .text-div p, #page-loader .text-div h6{margin:0;display:block;color:#ffffff;font-size:.9em;letter-spacing:1px;font-weight:300;text-shadow:2px 2px 2px rgba(0, 0, 0, 0.29);}
 #page-loader .text-div h6{margin-top:5px;font-size:1.3em;}
-.spinner{width:50px;height:50px;background-color:#ffffff;margin:200px auto;-webkit-animation:rotateplane 1.2s infinite ease-in-out;animation:rotateplane 1.2s infinite ease-in-out;}
+.spinner{width:50px;height:50px;background-color:#009EFF;margin:200px auto;-webkit-animation:rotateplane 1.2s infinite ease-in-out;animation:rotateplane 1.2s infinite ease-in-out;}
 @-webkit-keyframes rotateplane{0%{-webkit-transform:perspective(120px);}
     50%{-webkit-transform:perspective(120px) rotateY(180deg);}
     100%{-webkit-transform:perspective(120px) rotateY(180deg) rotateX(180deg);}
