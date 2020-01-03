@@ -18,6 +18,13 @@ body {
   color: #4d4d4d;
   background: #fff;
 }
+footer{
+  background-color: #0F0F0F;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.copyright{
+  color: #898989;
+}
 
 #page {
   position: relative;
